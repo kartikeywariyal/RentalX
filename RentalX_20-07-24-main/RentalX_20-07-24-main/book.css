@@ -1,0 +1,158 @@
+:root {
+  --primary-color: #FF5B3B;
+  --secondary-color: #fc8023;
+  --text-dark: #0f172a;
+  --text-light: #475569;
+  --extra-light: #f2f2f2;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --gradient: linear-gradient(to bottom, #FF5B3B, #fc8023);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  line-height: 1.6;
+  background-color: var(--extra-light);
+  color: var(--text-dark);
+}
+
+header {
+  background: var(--gradient);
+  color: var(--white);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.booking-section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.booking-form {
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+.booking-form label {
+  font-weight: 600;
+  color: var(--text-dark);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--text-light);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 91, 59, 0.5);
+}
+
+.booking-form button {
+  padding: 1rem 2rem;
+  background: var(--gradient);
+  color: var(--white);
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.booking-form button:hover {
+  background: var(--secondary-color);
+}
+
+#map {
+  height: 300px;
+  border: 1px solid var(--text-light);
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+footer {
+  background: var(--gradient);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+footer h4 {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  .booking-form {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  #map {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .booking-form {
+    padding: 1.5rem;
+  }
+
+  .booking-form button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  #map {
+    height: 150px;
+  }
+}
