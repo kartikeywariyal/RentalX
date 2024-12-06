@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RENTALX</title>
+  <link rel="stylesheet" href="book.css">
+</head>
+<body>
+
+  <header>
+    <div class="header__container">
+      <div class="header__content">
+        <h1>RENTALX</h1>
+        <p>Book Your Car</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="booking-section">
+    <div class="section__container">
+      <div class="booking-form">
+        <label for="location">Pick-up Location:</label>
+        <!-- This will display the map -->
+        <p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13911.716358091377!2d79.54886724147327!3d29.34307385935824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a098281277a58f%3A0xcfc368b144efc139!2sBhimtal%20Lake!5e0!3m2!1sen!2sin!4v1733503281621!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
+
+        <input type="text" id="location" placeholder="Location will be picked here..." disabled>
+
+        <label for="pickup-date">Pick-up Date:</label>
+        <input type="date" id="pickup-date">
+
+        <label for="dropoff-date">Drop-off Date:</label>
+        <input type="date" id="dropoff-date">
+
+        <button class="btn">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer__container">
+    <div class="footer__bar">
+      <h4>&copy; 2024 RENTALX. All rights reserved.</h4>
+    </div>
+  </footer>
+
+</body>
+</html>
